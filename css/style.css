@@ -1,0 +1,438 @@
+/* ========================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ======================================== */
+
+/* RESET: Remove padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Calcula padding/border dentro da largura total */
+}
+
+/* BODY: Estilo base de todas as páginas */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fonte moderna e legível */
+    background-color: #F3F4F6;
+    /* Fundo cinza claro */
+    color: #1F2B3F;
+    /* Texto azul escuro */
+    line-height: 1.6;
+    /* Espaçamento entre linhas confortável */
+}
+
+/* ========================================
+   HEADER E NAVEGAÇÃO
+   ======================================== */
+
+/* HEADER: Cabeçalho fixo de todas as páginas */
+header {
+    display: flex;
+    /* Layout flexível horizontal */
+    justify-content: space-between;
+    /* Logo à esquerda, menu à direita */
+    align-items: center;
+    /* Alinhamento vertical central */
+    padding: 20px 60px;
+    /* Espaçamento interno */
+    background: #FFFFFF;
+    /* Fundo branco */
+    border-bottom: 3px solid #2E5BB9;
+    /* Borda azul inferior */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    /* Sombra sutil */
+}
+
+/* LOGO: Título principal do site */
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    /* Negrito forte */
+    letter-spacing: 1px;
+    /* Espaçamento entre letras */
+    color: #2563EB;
+    /* Azul principal da marca */
+}
+
+/* MENU: Container da navegação */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Espaço entre links */
+}
+
+/* LINKS DO MENU: Estilo base */
+.menu a {
+    text-decoration: none;
+    /* Remove sublinhado */
+    color: #1F2B3F;
+    font-weight: 500;
+    /* Semibold */
+    position: relative;
+    transition: 0.3s;
+    /* Animação suave */
+}
+
+/* HOVER MENU: Efeito ao passar mouse */
+.menu a:hover {
+    color: #2CCB91;
+    /* Verde da marca */
+}
+
+/* ========================================
+   BOTÕES GERAIS
+   ======================================== */
+
+/* BOTÕES: Estilo padrão de TODOS os botões */
+button {
+    background-color: #2CCB91;
+    /* Verde principal */
+    color: white;
+    border: none;
+    /* Sem borda */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-radius: 6px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mão */
+    transition: all 0.3s ease;
+    /* Animações suaves */
+}
+
+button:hover {
+    background-color: #25a97a;
+    /* Verde mais escuro */
+    transform: scale(1.05);
+    /* Aumenta levemente */
+}
+
+/* BOTÃO LOGIN ESPECÍFICO */
+nav a button {
+    background-color: #2CCB91;
+    padding: 8px 15px;
+    /* Menor que botões normais */
+    border-radius: 6px;
+}
+
+nav a button:hover {
+    background-color: #25a97a;
+}
+
+/* ========================================
+   SEÇÕES E CONTEÚDO
+   ======================================== */
+
+/* SEÇÕES: Estilo padrão de todas as sections */
+section {
+    padding: 80px 60px;
+    /* Espaçamento generoso */
+    max-width: 1200px;
+    margin: auto;
+    /* Centraliza conteúdo */
+}
+
+/* TÍTULOS PADRONIZADOS */
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    /* Espaço abaixo do título */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   CARDS DOS MENTORES
+   ======================================== */
+
+/* CONTAINER MENTORES: Layout flex responsivo */
+.mentores {
+    display: flex;
+    justify-content: center;
+    /* Centraliza cards */
+    gap: 30px;
+    /* Espaço entre cards */
+    flex-wrap: wrap;
+    /* Quebra linha em mobile */
+    margin-top: 40px;
+}
+
+/* CARD INDIVIDUAL: Cada mentor */
+.card {
+    background: #FFFFFF;
+    /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    text-align: center;
+    width: 200px;
+    /* Largura fixa desktop */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    /* Sombra suave */
+    transition: transform 0.3s ease;
+    /* Animação hover */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta card no hover */
+}
+
+/* ========================================
+   CURSOS (página curso.html)
+   ======================================== */
+
+/* ESTILO DAS IMAGENS DOS CURSOS */
+main section img {
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    margin-top: 10px;
+    /* Espaço acima da imagem */
+    max-width: 100%;
+    /* Responsivo */
+    height: auto;
+}
+
+/* TÍTULOS E TEXTOS DOS CURSOS */
+main section h3 {
+    margin-top: 20px;
+}
+
+main section p {
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   FORMULÁRIOS - ALUNO E MENTOR
+   ======================================== */
+
+/* FORMULÁRIO PRINCIPAL */
+.form-principal {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* CAMPOS DE INPUT */
+.form-principal input,
+.form-principal select,
+.form-principal textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-principal input:focus,
+.form-principal select:focus,
+.form-principal textarea:focus {
+    border-color: #2CCB91;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(44,203,145,0.1);
+}
+
+/* CHECKBOXES MULTIPLOS */
+.areas-ensino {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.areas-ensino label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.areas-ensino label:hover {
+    border-color: #2CCB91;
+    background: rgba(44,203,145,0.05);
+}
+
+/* BOTÕES DO FORMULÁRIO */
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-secundario {
+    background: #6B7280;
+    color: white;
+}
+
+/* RESPONSIVO FORMULÁRIOS */
+@media (max-width: 768px) {
+    .areas-ensino {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+}
+
+/* ========================================
+   PERFIS DE MENTORES
+   ======================================== */
+
+.perfil-mentor {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.perfil-cabecalho {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #2CCB91;
+}
+
+.foto-mentor {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2CCB91;
+}
+
+.info-mentor h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-mentor h2 {
+    color: #2563EB;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.biografia, .habilidades, .disponibilidade {
+    margin-bottom: 2rem;
+}
+
+.lista-habilidades {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.lista-habilidades li {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #2CCB91;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .perfil-cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ========================================
+   RESPONSIVIDADE MOBILE
+   ======================================== */
+
+/* TABLET E MOBILE (até 768px) */
+@media (max-width: 768px) {
+    /* CARDS: Empilha verticalmente */
+    .mentores {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 90%;
+        /* Quase tela cheia */
+    }
+    
+    /* MENU: Empilha vertical */
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    /* HEADER: Padding reduzido */
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* IMAGENS: Largura total */
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* TÍTULOS: Centralizados */
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    /* SEÇÕES: Menos padding */
+    section {
+        padding: 40px 20px;
+    }
+}
+
+/* ========================================
+   LINKS E NAVEGAÇÃO
+   ======================================== */
+
+/* LINKS NAV: Remove sublinhado padrão */
+nav a {
+    text-decoration: none;
+    color: #1F2B3F;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* HOVER LINKS NAVEGAÇÃO */
+nav a:hover {
+    color: #2CCB91;
+}
+
+/* ========================================
+   FIM DO CSS
+   ======================================== */

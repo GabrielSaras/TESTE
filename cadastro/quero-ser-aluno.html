@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- FORMULÁRIO ESPECÍFICO: Inscrição de ALUNOS -->
+
+<html lang="pt-br">
+<head>
+    <!-- METADADOS DO FORMULÁRIO ALUNO -->
+    <meta charset="UTF-8">
+    <!-- Codificação para acentos -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade completa -->
+    
+    <title>Quero Aprender - Tech for All</title>
+    <!-- Título específico para alunos -->
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Estilos globais do projeto -->
+</head>
+
+<body>
+    <!-- HEADER: Navegação simplificada para formulário -->
+    <header>
+        <!-- Cabeçalho padrão do site -->
+        <h1>Tech For All</h1>
+        <!-- Logo principal -->
+        
+        <nav class="menu">
+            <!-- Menu mínimo para conversão -->
+            <a href="../index.html">🏠 Início</a> |
+            <!-- Volta para home -->
+            
+            <a href="../pages/curso.html">📚 Ver Cursos</a>
+            <!-- Lista de cursos disponíveis -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO: Call-to-action do formulário aluno -->
+        <section>
+            <h2>🚀 Comece a Aprender Hoje!</h2>
+            <!-- Título motivacional -->
+            <p>Preencha seus dados e receba acesso gratuito aos cursos</p>
+            <!-- Descrição do benefício -->
+        </section>
+
+        <!-- FORMULÁRIO ALUNO: Coleta dados específicos -->
+        <section>
+            <form id="formAluno" class="form-principal">
+                <!-- DADOS PESSOAIS -->
+                <h3>📋 Seus Dados</h3>
+                <!-- Agrupamento visual -->
+                
+                <input type="text" 
+                       id="nomeAluno" 
+                       placeholder="Nome Completo *" 
+                       required>
+                <!-- Campo obrigatório -->
+                
+                <input type="email" 
+                       id="emailAluno" 
+                       placeholder="Email *" 
+                       required>
+                <!-- Validação email automática -->
+                
+                <input type="tel" 
+                       id="whatsappAluno" 
+                       placeholder="WhatsApp (com DDD)">
+                <!-- Contato principal -->
+
+                <!-- PREFERÊNCIAS DE CURSO -->
+                <h3>🎯 Qual curso você quer?</h3>
+                
+                <select id="cursoPreferido" required>
+                    <option value="">Selecione um curso</option>
+                    <!-- Opção padrão -->
+                    <option value="web">💻 Desenvolvimento Web (HTML/CSS/JS)</option>
+                    <option value="python">🐍 Python Completo</option>
+                    <option value="uiux">🎨 UI/UX Design</option>
+                    <option value="banco">🗄️ Banco de Dados (SQL)</option>
+                    <option value="logica">🧠 Lógica de Programação</option>
+                </select>
+
+                <!-- EXPERIÊNCIA ATUAL -->
+                <h3>📊 Seu nível atual</h3>
+                
+                <select id="nivelAtual" required>
+                    <option value="">Qual seu conhecimento?</option>
+                    <option value="zero">Nunca programei</option>
+                    <option value="basico">Sei o básico</option>
+                    <option value="medio">Tenho algum conhecimento</option>
+                    <option value="avancado">Já desenvolvo projetos</option>
+                </select>
+
+                <!-- BOTÕES DE AÇÃO -->
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">
+                        ✅ Inscrever Gratuitamente
+                    </button>
+                    <!-- Botão principal de conversão -->
+                </div>
+            </form>
+        </section>
+
+        <!-- ALTERNATIVA: Botão voltar separado -->
+        <section class="voltar-section">
+            <a href="../index.html">
+                <button class="btn-secundario">⬅️ Voltar ao Início</button>
+            </a>
+        </section>
+    </main>
+
+    <!-- VALIDAÇÃO E FUNCIONALIDADE JS -->
+    <script src="../js/script.js"></script>
+    <!-- Processamento do formulário -->
+</body>
+</html>

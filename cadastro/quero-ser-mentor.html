@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- FORMULÁRIO ESPECÍFICO: Cadastro de MENTORES VOLUNTÁRIOS -->
+
+<html lang="pt-br">
+<head>
+    <!-- METADADOS DO FORMULÁRIO MENTOR -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Ser Mentor - Tech for All</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- HEADER: Navegação para mentor -->
+    <header>
+        <h1>Tech For All</h1>
+        <nav class="menu">
+            <a href="../index.html">🏠 Início</a> |
+            <!-- Home principal -->
+            
+            <a href="../Mentores/mentor.html">👥 Ver Mentores</a>
+            <!-- Lista atual de mentores -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO: Convite para mentoria -->
+        <section>
+            <h2>👨‍🏫 Seja Nosso Mentor!</h2>
+            <!-- Título específico para mentores -->
+            
+            <p>Compartilhe seu conhecimento e mude vidas através da tecnologia</p>
+            <!-- Mensagem inspiradora -->
+        </section>
+
+        <!-- FORMULÁRIO MENTOR: Dados profissionais -->
+        <section>
+            <form id="formMentor" class="form-principal">
+                <!-- IDENTIFICAÇÃO -->
+                <h3>👤 Quem você é?</h3>
+                
+                <input type="text" 
+                       id="nomeMentor" 
+                       placeholder="Nome Completo *" 
+                       required>
+                
+                <input type="email" 
+                       id="emailMentor" 
+                       placeholder="Email Profissional *" 
+                       required>
+                
+                <input type="tel" 
+                       id="whatsappMentor" 
+                       placeholder="WhatsApp para contato *" 
+                       required>
+
+                <!-- EXPERIÊNCIA PROFISSIONAL -->
+                <h3>💼 Sua Experiência</h3>
+                
+                <textarea id="experiencia" 
+                          placeholder="Conte sobre sua experiência em TI (mín. 100 caracteres)" 
+                          rows="5" 
+                          required></textarea>
+                <!-- Área de texto longa -->
+
+                <!-- ÁREAS DE ENSINO -->
+                <h3>🎓 O que você ensina?</h3>
+                
+                <!-- Múltipla escolha -->
+                <div class="areas-ensino">
+                    <label><input type="checkbox" value="html"> HTML/CSS</label>
+                    <label><input type="checkbox" value="js"> JavaScript</label>
+                    <label><input type="checkbox" value="react"> React</label>
+                    <label><input type="checkbox" value="python"> Python</label>
+                    <label><input type="checkbox" value="design"> Design</label>
+                    <label><input type="checkbox" value="banco"> Banco de Dados</label>
+                </div>
+
+                <!-- DISPONIBILIDADE -->
+                <h3>📅 Quando pode ensinar?</h3>
+                
+                <input type="text" 
+                       id="diasDisponiveis" 
+                       placeholder="Ex: Seg, Qua, Sex">
+                
+                <input type="time" 
+                       id="horarioInicio" 
+                       placeholder="Horário início">
+
+                <!-- CONFIRMAÇÃO -->
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">
+                        🎯 Confirmar como Mentor
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- NAVEGAÇÃO DE VOLTA -->
+        <section class="voltar-section">
+            <a href="../index.html">
+                <button class="btn-secundario">⬅️ Voltar</button>
+            </a>
+        </section>
+    </main>
+
+    <!-- PROCESSAMENTO DO FORMULÁRIO MENTOR -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
