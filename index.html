@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Página principal - Interface inicial do Tech for All -->
+
+<html lang="pt-br">
+<!-- Documento em português brasileiro -->
+
+<head>
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <meta charset="UTF-8">
+    <!-- Suporte a caracteres especiais (acentos, ç) -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade em todos dispositivos -->
+    
+    <title>Tech for All - Mentoria Gratuita</title>
+    <!-- Título exibido na aba do navegador -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Estilos globais do projeto -->
+</head>
+
+<body>
+    <!-- HEADER: LOGO + MENU PRINCIPAL -->
+    <header>
+        <!-- Cabeçalho fixo com navegação -->
+        <h1>Tech For All</h1>
+        <!-- Logo/Título principal do site -->
+        
+        <nav class="menu">
+            <!-- Menu de navegação principal -->
+            <a href="index.html">🏠 Início</a> |
+            <!-- Link para página atual (home) -->
+            
+            <a href="pages/curso.html">📚 Cursos</a> |
+            <!-- Link para página de cursos -->
+            
+            <a href="Mentores/mentor.html">👥 Mentores</a> |
+            <!-- Link para lista geral de mentores -->
+            
+            <a href="cadastro/quero-ser-mentor.html">👨‍🏫 Ser Mentor</a> |
+            <!-- Link para formulário mentor -->
+            
+            <a href="cadastro/quero-ser-aluno.html">
+                <!-- Link para formulário aluno com botão estilizado -->
+                <button>🚀 Quero Aprender</button>
+            </a>
+        </nav>
+    </header>
+
+    <!-- SEPARADOR VISUAL -->
+    <hr><!-- Linha horizontal para dividir seções -->
+
+    <!-- BANNER PRINCIPAL: Call-to-action inicial -->
+    <section>
+        <!-- Seção hero/banner principal -->
+        <h2>Tecnologia não é Privilégio.</h2>
+        <!-- Frase principal impactante -->
+        
+        <h3>É conhecimento para todos.</h3>
+        <!-- Subtítulo reforçando mensagem -->
+        
+        <p>Conectando voluntários em tecnologia com quem quer aprender gratuitamente.</p>
+        <!-- Descrição do propósito do projeto -->
+        
+        <div>
+            <!-- Container dos botões principais -->
+            <a href="cadastro/quero-ser-aluno.html">
+                <!-- Botão para alunos interessados -->
+                <button>Quero Aprender</button>
+            </a>
+
+            <a href="cadastro/quero-ser-mentor.html">
+                <!-- Botão para futuros mentores -->
+                <button>Quero ser Mentor</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SEPARADOR VISUAL -->
+    <hr><!-- Linha horizontal -->
+
+    <!-- SEÇÃO MENTORES: Cards clicáveis -->
+    <section>
+        <!-- Seção de apresentação dos mentores -->
+        <h2>Nossos Mentores</h2>
+        <!-- Título da seção -->
+        
+        <!-- CONTAINER FLEXBOX RESPONSIVO -->
+        <div class="mentores">
+            <!-- Cards organizados em flexbox (adaptável mobile) -->
+            
+            <!-- MENTOR 1: Gabriel -->
+            <div class="card">
+                <!-- Card individual com hover effect -->
+                <h4>Gabriel Saras</h4>
+                <!-- Nome do mentor -->
+                <p>Desenvolvedor Front-end</p>
+                <!-- Especialidade/área -->
+                <a href="Mentores/gabriel.html">
+                    <!-- Link direto para perfil individual -->
+                    <button>Ver Perfil</button>
+                </a>
+            </div>
+
+            <!-- MENTOR 2: Vanessa -->
+            <div class="card">
+                <h4>Vanessa Souza</h4>
+                <p>Desenvolvedora Back-end</p>
+                <a href="Mentores/vanessa.html">
+                    <button>Ver Perfil</button>
+                </a>
+            </div>
+
+            <!-- Demais mentores seguem mesmo padrão -->
+            <div class="card">
+                <h4>Stefany</h4>
+                <p>Designer</p>
+                <a href="Mentores/stefany.html">
+                    <button>Ver Perfil</button>
+                </a>
+            </div>
+            
+            <div class="card">
+                <h4>Matheus Rocha</h4>
+                <p>Designer</p>
+                <a href="Mentores/matheus.html">
+                    <button>Ver Perfil</button>
+                </a>
+            </div>
+            
+            <div class="card">
+                <h4>Kaio</h4>
+                <p>Designer</p>
+                <a href="Mentores/kaio.html">
+                    <button>Ver Perfil</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT: Preparado para interatividade futura -->
+    <script src="js/script.js"></script>
+    <!-- Arquivo JS global (criar pasta js/) -->
+</body>
+</html>
